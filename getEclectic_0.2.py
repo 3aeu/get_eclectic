@@ -12,8 +12,6 @@ lineArg = sys.argv
 # проверка кодировки
 def getMp3Url(urlString):
 	u = urlopen(urlString)			# getting full web page as HTTPResponse Objects
-	#print(urlString)				# temporary output | need to delete or comment after debugging
-	#print(u.status)
 	webPage = u.read().decode("utf-8") 			# read, decode page from bytes to string and safe to variable
 	
 	################ temporary block #################
